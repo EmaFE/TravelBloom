@@ -7,7 +7,9 @@
   <script src="../script/travel_recommendation.js" defer></script>
   <link rel="stylesheet" href="../css/travel_recommendation.css">
 </head>
+
 <body>
+
   <nav>
     <h2>Travel Bloom</h2>
     <ul>
@@ -19,27 +21,32 @@
       <li><button id="clearBtn" onclick="clearHandle()">Clear Search</button></li>
     </ul>
   </nav>
+<div class="main-container">
+  <div class="main-container-left">
+    <div id="main-heading">
+      EXPLORE DREAM DESTINATION
+    </div>
+    <div id="home-description">
+      It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+    </div>
 
-  <div id="main-heading">
-    EXPLORE DREAM DESTINATION
-  </div>
-  <div id="home-description">
-    It encourages exploration of unfimiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates teh heart and ignites a sense of wonder.
+    <div>
+      <ul id="social-media">
+        <li>Twitter</li>
+        <li>Instagram</li>
+        <li>Youtube</li>
+        <li>Facebook</li>
+      </ul>
+    </div>
+    <button id="bookBtn" onclick="bookBtn()">BOOK NOW</button>
   </div>
 
+  <div class="main-container-right">
     <div id="result">
 
+    </div>
   </div>
-
-  <div>
-    <ul id="social-media">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </div>
-  <button id="bookBtn" onclick="bookBtn()">BOOK NOW</button>
+  
   
 </body>
 </html>

@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../data/bg.avif);
+  background-size: 100% auto;
+  color: aliceblue;
+}
+
+/* navigation bar */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e2a30;
+  padding: 1rem 2rem;
+}
+
+nav h2{
+  font-size: 1.5rem;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+nav ul li{
+  display: inline;
+  font-weight: 500;
+}
+
+nav a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+nav input[type="text"]{
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+nav button{
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #00aaff;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+/* main page layout */
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* home page */
+#main-heading{
+  max-width: 500px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+  padding: 2rem 2rem 0 2rem;
+}
+
+#home-description{
+  max-width: 500px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  line-height: 1.5;
+}
+
+#bookBtn{
+  margin: 1rem 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* result searches */
+#result{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+  padding: 2rem;
+  padding-right: 10rem;
+}
+
+.result-rectangle{
+  background-color: transparent;
+  border-radius: 15px;
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.result-rectangle:hover{
+  transform: scale(1.05);
+}
+
+.result-rectangle img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.result-rectangle p{
+ line-height: 1.3;
+}
+
+/* social media icons from home page */
+#social-media{
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+#social-media ul{
+
+}
+
+#social-media li {
+  list-style-type: none;
+  transition: transform 0.2s;
+}
+
+#social-media li:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+  color: blanchedalmond;
+}
+
+/* about us page */
+#about-description{
+  max-width: 500px;
+}
+

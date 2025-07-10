@@ -1,0 +1,58 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url(../data/bg.avif);
+  background-size: 100% auto;
+  color: aliceblue;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e2a30;
+  padding: 1rem 2rem;
+}
+
+nav h2{
+  font-size: 1.5rem;
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+nav ul li{
+  display: inline;
+  font-weight: 500;
+}
+
+nav a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+}
+
+nav input[type="text"]{
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+}
+
+nav button{
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #00aaff;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#about-description{
+  max-width: 500px;
+}
