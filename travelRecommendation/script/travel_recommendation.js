@@ -3,6 +3,8 @@
 const searchBtn = document.getElementById("searchBtn");
 const clearBtn = document.getElementById("clearBtn");
 const resultDiv =  document.getElementById("result");
+const inp = document.getElementById("searchInput");
+
 
 function clearHandle(){
   document.getElementById("searchInput").value = "";
@@ -107,3 +109,12 @@ function displayResult(matches){
     resultDiv.appendChild(res);
   });  
 }
+
+inp.addEventListener("keypress", function(event){
+    if (event.key === "Enter") {
+    //cancel default action
+    event.preventDefault();
+    //trigger button element with a click
+    document.getElementById("searchBtn").click();
+  }
+});
