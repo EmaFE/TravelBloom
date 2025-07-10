@@ -15,44 +15,30 @@
       <li><a href="travel_recommendation.html">Home</a></li>
       <li><a href="contact.html">Contact</a></li>
       <li><a href="about_us.html">About Us</a></li>
-      <li><input type="text" id="searchInput" placeholder="Enter a destination"></li>
-      <li><button id="searchBtn" onclick="searchHandle()">Search</button></li>
-      <li><button id="clearBtn" onclick="clearHandle()">Clear Search</button></li>
     </ul>
   </nav>
 
-  <div class="main-container">
-    <div class="main-container-left">
-       
-      <div id="contact-container">
-        <div id="contact-left">
-          <h2>CONTACT US</h2>
-          <p>Get in touch</p>
-        </div>
-
-        <div id="contact-right">
-          <form id="form">
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name"><br><br>
-
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email"><br><br>
-
-            <label for="message">Message</label><br>
-            <textarea type="text" name="message" id="message" rows="12">
-            </textarea><br><br>
-          </form>
-          <button type="submit">Submit</button>
-        </div>
-      </div>
-
+  <div id="contact-container">
+    <div id="contact-left">
+      <h1>CONTACT US</h1>
+      <p>Get in touch</p>
     </div>
 
-    <div class="main-container-right">
-      <div id="result"></div>
-    </div>
+    <div id="contact-right">
+      <form id="form">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name"><br><br>
 
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="message">Message</label><br>
+        <textarea type="text" name="message" id="message" rows="12">
+        </textarea><br><br>
+      </form>
+      <button type="submit">Submit</button>
+    </div>
   </div>
-  
+
 </body>
 </html>
