@@ -4,6 +4,8 @@ body{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-image: url(../data/bg.avif);
   background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: aliceblue;
 }
 
@@ -157,6 +159,16 @@ nav button{
   gap: 2rem;
 }
 
+.member-btn{
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #00aaff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
 /* contact us page */
 
 #contact-container{
@@ -180,19 +192,10 @@ nav button{
   color: #333;
 }
 
-/* 
- padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background-color: #00aaff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-*/
-
 #contact-right button{
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
-  background-color: rgba(255, 255, 255, 0.4); /* white with 40% opacity */
+  background-color: rgba(154, 162, 227, 0.4); /* white with 40% opacity */
   border: none;
   border-radius: 8px;
   cursor: pointer;  
