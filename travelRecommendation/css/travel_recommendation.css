@@ -70,7 +70,6 @@ nav button{
   font-size: 3rem;
   font-weight: bold;
   text-align: left;
-  /* padding: 2rem 2rem 0 2rem; */
 }
 
 #home-description{
@@ -196,7 +195,7 @@ nav button{
 }
 
 #contact-right{
-  width: 600px; /* or a percentage like 80% */
+  width: 600px; 
   max-width: 100%; /* optional for responsiveness */
 }
 
