@@ -23,7 +23,7 @@ function searchHandle(){
           if (country.name.toLowerCase().includes(inputText)){
             matches.push({
               name: country.name,
-           //   image: country.cities[0].imageUrl,
+              image: country.cities[0].imageUrl,
               description: `Enjoy the beauty of ${country.name}!`
             });
           }
@@ -41,7 +41,13 @@ function searchHandle(){
 
         //if input is temple or temples, show all temples
         if(["temple", "temples"].includes(inputText)){
-          matches.push(...data.temples);
+          matches.push(
+            ...data.temples.map(temple => ({ // () - object
+              name: temple.name, 
+              image: temple.imageUrl,
+              description: temple.description
+            }))
+          );
         } else{  //traverse temples if specific one was typed in
           data.temples.forEach(temple =>{
             if(temple.name.toLowerCase().includes(inputText)){
@@ -56,7 +62,13 @@ function searchHandle(){
 
         //if input is beach or beaches, show all beaches
         if(["beach", "beaches"].includes(inputText)){
-          matches.push(...data.beaches);
+          matches.push(
+            ...data.beaches.map(beach => ({
+              name: beach.name,
+              image: beach.imageUrl,
+              description: beach.description
+            }))
+          )
         } else{//traverse all beaches if specific one is typed in
           data.beaches.forEach(beach =>{
             if(beach.name.toLowerCase().includes(inputText)){
